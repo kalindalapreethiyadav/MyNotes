@@ -1,0 +1,17 @@
+How to rebase your branch with main branch?
+
+    git checkout main  
+    git pull origin main  
+    git checkout myfeaturebranch  
+    git pull origin myfeaturebranch  
+    git rebase -i main  
+    <in vim>  
+    :%s/^pick/s/  
+    press i (interactive mode) <change first line from s to pick>  
+    press esc  
+    :wq  
+    <vim any files which have merged conflicts>  
+    git add /path/to/file/changed  
+    git rebase --continue  
+    <repeat>  
+    git push origin myfeaturebranch -f
