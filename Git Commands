@@ -15,3 +15,37 @@ How to rebase your branch with main branch?
     git rebase --continue  
     <repeat>  
     git push origin myfeaturebranch -f
+
+How to check git logs?
+$git log -1
+    Output
+        commit e8fa82731c72fb38d0b3ceac4979a53f0566a262 (HEAD -> feature/awsnotes, origin/main, origin/HEAD, main)
+        Author: Preethi yadav <98330687+kalindalapreethiyadav@users.noreply.github.com>
+        Date:   Thu Mar 7 13:00:43 2024 +0530
+
+$git branch
+    output:
+        * feature/awsnotes
+          main
+
+#intialize in local project
+$ git init 
+Reinitialized existing Git repository in C:/Users/preethi.kalindala/Desktop/Preethi Learnings/.git/
+
+#status of untracked files
+$git status
+output:
+    #intialize in local
+      (use "git restore <file>..." to discard changes in working directory)
+
+    Untracked files:
+      (use "git add <file>..." to include in what will be committed)
+            .vs/Preethi Learnings/
+            MyNotes/
+            POC/
+
+
+
+
+
+
